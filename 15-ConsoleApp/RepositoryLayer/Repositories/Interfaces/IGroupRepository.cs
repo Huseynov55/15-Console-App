@@ -6,6 +6,7 @@ namespace RepositoryLayer.Repositories.Interfaces
 {
     public interface IGroupRepository : IRepository<CourseGroup>
     {
+        List<CourseGroup> GetAll(Predicate<CourseGroup> predicate);
         List<CourseGroup> GetAllByTeacher(string teacher);
         List<CourseGroup> GetAllByRoom(string room);
         List<CourseGroup> SearchByName(string name);

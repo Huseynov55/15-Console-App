@@ -30,7 +30,7 @@ namespace RepositoryLayer.Repositories.Implementations
             throw new NotImplementedException();
         }
 
-        public List<Student> GetAll(Predicate<Student> predicate)
+        public List<Student> GetAll(Predicate<Student> predicate, int id)
         {
             throw new NotImplementedException();
         }

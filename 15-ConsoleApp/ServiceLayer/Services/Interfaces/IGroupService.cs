@@ -9,7 +9,7 @@ namespace ServiceLayer.Services.Interfaces
     {
         CourseGroup Create(CourseGroup group);
         CourseGroup Update(int id, CourseGroup group);
-        void Delete(int id);
+        bool Delete(CourseGroup group);
         CourseGroup GetById(int id);
         List<CourseGroup> GetAll();
         List<CourseGroup> GetAllByTeacher(string teacher);

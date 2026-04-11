@@ -1,5 +1,6 @@
 ﻿using DomainLayer.Entities;
 using RepositoryLayer.Repositories.Implementations;
+using RepositoryLayer.Repositories.Interfaces;
 using ServiceLayer.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,14 @@ namespace ServiceLayer.Services.Implementations
 {
     public class GroupService : IGroupService
     {
+
         private int _count = 1;
         private GroupRepository _groupRepository;
 
+        public GroupService()
+        {
+            _groupRepository = new GroupRepository();
+        }
         public CourseGroup Create(CourseGroup group)
         {
             group.Id = _count;
@@ -21,7 +27,7 @@ namespace ServiceLayer.Services.Implementations
             return group;
         }
 
-        public void Delete(int id)
+        public bool Delete(CourseGroup group)
         {
             throw new NotImplementedException();
         }

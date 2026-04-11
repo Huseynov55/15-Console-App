@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\",
+  "WorkspaceRootPath": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{300536C2-B450-8E64-2220-A919CA12A5AE}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\anarh\\desktop\\apa202\\15-consoleapp\\repositorylayer\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6E58ED2-E152-9F84-D785-DE08573D6E48}|CourseApp\\CourseApp.csproj|c:\\users\\anarh\\desktop\\15-console-app\\15-consoleapp\\courseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6E58ED2-E152-9F84-D785-DE08573D6E48}|CourseApp\\CourseApp.csproj|solutionrelative:courseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C64309F3-63BC-4D7C-85F6-2361DF3AA5A8}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\anarh\\desktop\\15-console-app\\15-consoleapp\\servicelayer\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C64309F3-63BC-4D7C-85F6-2361DF3AA5A8}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{300536C2-B450-8E64-2220-A919CA12A5AE}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\anarh\\desktop\\15-console-app\\15-consoleapp\\repositorylayer\\repositories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{300536C2-B450-8E64-2220-A919CA12A5AE}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repositories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C64309F3-63BC-4D7C-85F6-2361DF3AA5A8}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\anarh\\desktop\\15-console-app\\15-consoleapp\\servicelayer\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C64309F3-63BC-4D7C-85F6-2361DF3AA5A8}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{300536C2-B450-8E64-2220-A919CA12A5AE}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\anarh\\desktop\\15-console-app\\15-consoleapp\\repositorylayer\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{300536C2-B450-8E64-2220-A919CA12A5AE}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C64309F3-63BC-4D7C-85F6-2361DF3AA5A8}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\anarh\\desktop\\apa202\\15-consoleapp\\servicelayer\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C64309F3-63BC-4D7C-85F6-2361DF3AA5A8}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C64309F3-63BC-4D7C-85F6-2361DF3AA5A8}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\anarh\\desktop\\apa202\\15-consoleapp\\servicelayer\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C64309F3-63BC-4D7C-85F6-2361DF3AA5A8}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +39,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
-              "ToolTip": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
-              "RelativeToolTip": "RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\CourseApp\\Program.cs",
+              "RelativeDocumentMoniker": "CourseApp\\Program.cs",
+              "ToolTip": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\CourseApp\\Program.cs",
+              "RelativeToolTip": "CourseApp\\Program.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAWwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:00:12.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
-              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
-              "ToolTip": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
-              "RelativeToolTip": "ServiceLayer\\Services\\Interfaces\\IStudentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T04:41:17.842Z",
+              "WhenOpened": "2026-04-11T21:32:19.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IGroupService.cs",
-              "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "ToolTip": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "RelativeToolTip": "ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Title": "GroupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
+              "ToolTip": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T04:41:04.961Z",
+              "WhenOpened": "2026-04-10T05:04:09.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GroupService.cs",
+              "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "ToolTip": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\Implementations\\GroupService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:59:49.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
+              "RelativeToolTip": "RepositoryLayer\\Repositories\\Implementations\\StudentRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:04:22.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\ServiceLayer\\Services\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Implementations\\StudentService.cs",
+              "ToolTip": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\ServiceLayer\\Services\\Implementations\\StudentService.cs",
+              "RelativeToolTip": "ServiceLayer\\Services\\Implementations\\StudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:05:30.454Z",
               "EditorCaption": ""
             }
           ]

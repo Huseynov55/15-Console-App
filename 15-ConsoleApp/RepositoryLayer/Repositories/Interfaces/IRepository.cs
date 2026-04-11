@@ -10,6 +10,6 @@ namespace RepositoryLayer.Repositories.Interfaces
         void Update(T data);
         void Delete(T data);
         T GetById(int id);
-        List<T> GetAll(Predicate<T> predicate);
+        
     }
 }

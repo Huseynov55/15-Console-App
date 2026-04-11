@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\DomainLayer\\DomainLayer.csproj",
+      "projectUniqueName": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\DomainLayer\\DomainLayer.csproj",
       "projectName": "DomainLayer",
-      "projectPath": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\DomainLayer\\DomainLayer.csproj",
+      "projectPath": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\DomainLayer\\DomainLayer.csproj",
       "packagesPath": "C:\\Users\\anarh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anarh\\Desktop\\Apa202\\15-ConsoleApp\\DomainLayer\\obj\\",
+      "outputPath": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\DomainLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

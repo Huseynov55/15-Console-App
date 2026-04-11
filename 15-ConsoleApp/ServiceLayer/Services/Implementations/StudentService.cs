@@ -14,14 +14,24 @@ namespace ServiceLayer.Services.Implementations
     {
         private int _count = 1;
         private StudentRepository _studentRepository;
+        private GroupRepository _groupRepository;
+
+        public StudentService()
+        {
+            _studentRepository = new StudentRepository();
+        }
         public Student Create(Student student, int groupId)
         {
+            var group = _groupRepository.GetById(groupId);
+            if (group == null) throw new Exception("Qrup tapilmadi!");
             student.Id = _count;
+            student.Group = group;
+            _studentRepository.Create(student);
             _count++;
             return student;
         }
 
-        public void Delete(int id)
+        public bool Delete(Student data)
         {
             throw new NotImplementedException();
         }

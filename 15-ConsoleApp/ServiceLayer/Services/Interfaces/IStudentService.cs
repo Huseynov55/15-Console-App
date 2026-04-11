@@ -9,7 +9,7 @@ namespace ServiceLayer.Services.Interfaces
     {
         Student Create(Student student, int groupId);
         Student Update(int id, Student student);
-        void Delete(int id);
+        bool Delete(Student data);
         Student GetById(int id);
         List<Student> GetAll(); 
         List<Student> GetAllByAge(int age);
