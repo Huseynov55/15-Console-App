@@ -27,37 +27,49 @@ namespace RepositoryLayer.Repositories.Implementations
 
         public void Delete(Student data)
         {
-            throw new NotImplementedException();
+            AppDbContext<Student>.datas.Remove(data);
         }
 
         public List<Student> GetAll(Predicate<Student> predicate, int id)
         {
-            throw new NotImplementedException();
+            return predicate == null
+           ? AppDbContext<Student>.datas
+           : AppDbContext<Student>.datas.FindAll(predicate);
         }
+
 
         public List<Student> GetAllByAge(int age)
         {
-            throw new NotImplementedException();
+            return AppDbContext<Student>.datas.Where(m => m.Age == age).ToList();
         }
 
         public List<Student> GetAllByGroupId(int groupId)
         {
-            throw new NotImplementedException();
+            return AppDbContext<Student>.datas.Where(m => m.Group.Id == groupId).ToList();
         }
 
         public Student GetById(int id)
         {
-            throw new NotImplementedException();
+            return AppDbContext<Student>.datas.FirstOrDefault(m => m.Id == id);
         }
 
         public List<Student> SearchByNameOrSurname(string text)
         {
-            throw new NotImplementedException();
+            return AppDbContext<Student>.datas
+                .Where(m => m.Name.ToLower().Contains(text.ToLower()) ||
+                            m.Surname.ToLower().Contains(text.ToLower())).ToList();
         }
 
         public void Update(Student data)
         {
-            throw new NotImplementedException();
+            Student existStudent = GetById(data.Id);
+            if (existStudent != null)
+            {
+                existStudent.Name = data.Name;
+                existStudent.Surname = data.Surname;
+                existStudent.Age = data.Age;
+                existStudent.Group = data.Group;
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ namespace RepositoryLayer.Repositories.Interfaces
     {
         List<CourseGroup> GetAll(Predicate<CourseGroup> predicate);
         List<CourseGroup> GetAllByTeacher(string teacher);
-        List<CourseGroup> GetAllByRoom(string room);
+        List<CourseGroup> GetAllByRoom(int room);
         List<CourseGroup> SearchByName(string name);
 
        

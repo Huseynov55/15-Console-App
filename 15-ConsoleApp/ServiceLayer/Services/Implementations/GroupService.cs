@@ -1,6 +1,8 @@
 ﻿using DomainLayer.Entities;
+using RepositoryLayer.Exceptions;
 using RepositoryLayer.Repositories.Implementations;
 using RepositoryLayer.Repositories.Interfaces;
+using ServiceLayer.Exceptions;
 using ServiceLayer.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -21,45 +23,67 @@ namespace ServiceLayer.Services.Implementations
         }
         public CourseGroup Create(CourseGroup group)
         {
+            var allGroups = _groupRepository.GetAll(x => true);
+
+            bool isRoomBusy = allGroups.Any(g => g.Room == group.Room);
+
+            if (isRoomBusy)
+            {
+                throw new IsFullException($"Room {group.Room} is already full!");
+            }
+
+
             group.Id = _count;
             _groupRepository.Create(group);
             _count++;
             return group;
         }
 
-        public bool Delete(CourseGroup group)
+        public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            CourseGroup existGroup = _groupRepository.GetById(id);
+            if (existGroup == null) throw new NotFoundException("Group not found!");
+            _groupRepository.Delete(existGroup);
+            return true;
         }
 
         public List<CourseGroup> GetAll()
         {
-            throw new NotImplementedException();
+            return _groupRepository.GetAll(x => true);
         }
 
-        public List<CourseGroup> GetAllByRoom(string room)
+        public List<CourseGroup> GetAllByRoom(int room)
         {
-            throw new NotImplementedException();
+            return _groupRepository.GetAllByRoom(room);
         }
 
         public List<CourseGroup> GetAllByTeacher(string teacher)
         {
-            throw new NotImplementedException();
+            return _groupRepository.GetAllByTeacher(teacher);
         }
 
         public CourseGroup GetById(int id)
         {
-            throw new NotImplementedException();
+            var group = _groupRepository.GetById(id);
+            if (group == null) throw new NotFoundException("Group not found!");
+            return group;
         }
 
         public List<CourseGroup> SearchByName(string name)
         {
-            throw new NotImplementedException();
+            var results = _groupRepository.SearchByName(name);
+            if (results.Count == 0) throw new NotFoundException($"No group found with name '{name}'");
+            return results;
         }
 
         public CourseGroup Update(int id, CourseGroup group)
         {
-            throw new NotImplementedException();
+            CourseGroup existGroup = _groupRepository.GetById(id);
+            if (existGroup == null) throw new NotFoundException("Group not found!");
+
+            group.Id = id;
+            _groupRepository.Update(group);
+            return group;
         }
     }
 }

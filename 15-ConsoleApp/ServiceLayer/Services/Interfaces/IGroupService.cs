@@ -9,11 +9,11 @@ namespace ServiceLayer.Services.Interfaces
     {
         CourseGroup Create(CourseGroup group);
         CourseGroup Update(int id, CourseGroup group);
-        bool Delete(CourseGroup group);
+        bool Delete(int id);
         CourseGroup GetById(int id);
         List<CourseGroup> GetAll();
         List<CourseGroup> GetAllByTeacher(string teacher);
-        List<CourseGroup> GetAllByRoom(string room);
+        List<CourseGroup> GetAllByRoom(int room);
         List<CourseGroup> SearchByName(string name);
     }
 }

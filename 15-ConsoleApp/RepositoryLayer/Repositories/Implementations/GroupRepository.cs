@@ -28,37 +28,41 @@ namespace RepositoryLayer.Repositories.Implementations
 
         public void Delete(CourseGroup data)
         {
-            throw new NotImplementedException();
+            AppDbContext<CourseGroup>.datas.Remove(data);
         }
 
         public List<CourseGroup> GetAll(Predicate<CourseGroup> predicate)
         {
-            throw new NotImplementedException();
+            return AppDbContext<CourseGroup>.datas;
         }
 
-        public List<CourseGroup> GetAllByRoom(string room)
+        public List<CourseGroup> GetAllByRoom(int room)
         {
-            throw new NotImplementedException();
+            return AppDbContext<CourseGroup>.datas.FindAll(m => m.Room == room);
         }
 
         public List<CourseGroup> GetAllByTeacher(string teacher)
         {
-            throw new NotImplementedException();
+            return AppDbContext<CourseGroup>.datas.FindAll(m => m.Teacher.ToLower().Contains(teacher.ToLower()));
         }
+
 
         public CourseGroup GetById(int id)
         {
-            throw new NotImplementedException();
+            return AppDbContext<CourseGroup>.datas.Find(m => m.Id == id);
         }
 
         public List<CourseGroup> SearchByName(string name)
         {
-            throw new NotImplementedException();
+            return AppDbContext<CourseGroup>.datas.FindAll(m => m.Name.ToLower().Contains(name.ToLower()));
         }
 
         public void Update(CourseGroup data)
         {
-            throw new NotImplementedException();
+            CourseGroup existGroup = GetById(data.Id);
+            existGroup.Name = data.Name;
+            existGroup.Room = data.Room;
+            existGroup.Teacher = data.Teacher;
         }
     }
 }
