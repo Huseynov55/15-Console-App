@@ -15,13 +15,23 @@ namespace CourseApp.Controllers
         {
             try
             {
-                Helper.PrintConsole(ConsoleColor.Magenta, "Enter Student Name:");
+            Name: Helper.PrintConsole(ConsoleColor.Magenta, "Enter Student Name:");
                 string name = Console.ReadLine();
+                if (string.IsNullOrEmpty(name))
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Student name is empty");
+                    goto Name;
+                }
 
-                Helper.PrintConsole(ConsoleColor.Magenta, "Enter Student Surname:");
+            Surname: Helper.PrintConsole(ConsoleColor.Magenta, "Enter Student Surname:");
                 string surname = Console.ReadLine();
+                if (string.IsNullOrEmpty(surname))
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Student surname is empty");
+                    goto Surname;
+                }
 
-                int age;
+            Age: int age;
                 while (true)
                 {
                     Helper.PrintConsole(ConsoleColor.Magenta, "Enter Student Age:");
@@ -34,6 +44,7 @@ namespace CourseApp.Controllers
                     else
                     {
                         Helper.PrintConsole(ConsoleColor.Red, "Age must be a number!");
+                        goto Age;
                     }
                 }
 

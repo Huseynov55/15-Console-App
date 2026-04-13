@@ -5,6 +5,7 @@ using ServiceLayer.Exceptions;
 using ServiceLayer.Services.Implementations;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace CourseApp.Controllers
@@ -15,11 +16,21 @@ namespace CourseApp.Controllers
         static GroupService _groupService = new GroupService();
         public void CreateGroup()
         {
-            Helper.PrintConsole(ConsoleColor.Magenta, "Add Group Name:");
+        Name: Helper.PrintConsole(ConsoleColor.Magenta, "Add Group Name:");
             string groupName = Console.ReadLine();
+            if (string.IsNullOrEmpty(groupName))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Group name is empty");
+                goto Name;
+            }
 
-            Helper.PrintConsole(ConsoleColor.Magenta, "Add Group Teacher:");
+        Teacher: Helper.PrintConsole(ConsoleColor.Magenta, "Add Group Teacher:");
             string groupTeacher = Console.ReadLine();
+            if (string.IsNullOrEmpty(groupTeacher))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Teacher name is empty");
+                goto Teacher;
+            }
 
 
             bool isAdded = false;
@@ -61,6 +72,7 @@ namespace CourseApp.Controllers
         {
             Helper.PrintConsole(ConsoleColor.Magenta, "Enter Group Id to update:");
             string idInput = Console.ReadLine();
+            
 
             if (int.TryParse(idInput, out int updateId))
             {
@@ -68,21 +80,31 @@ namespace CourseApp.Controllers
                 {
                     var existGroup = _groupService.GetById(updateId);
 
-                    Helper.PrintConsole(ConsoleColor.Magenta, "New Name:");
+                NewName: Helper.PrintConsole(ConsoleColor.Magenta, "New Name:");
                     string newName = Console.ReadLine();
+                    if (string.IsNullOrEmpty(newName))
+                    {
+                        Helper.PrintConsole(ConsoleColor.Red, "Group name is empty");
+                        goto NewName;
+                    }
 
-                    Helper.PrintConsole(ConsoleColor.Magenta, "New Teacher:");
+                NewTeacher: Helper.PrintConsole(ConsoleColor.Magenta, "New Teacher:");
                     string newTeacher = Console.ReadLine();
+                    if (string.IsNullOrEmpty(newTeacher))
+                    {
+                        Helper.PrintConsole(ConsoleColor.Red, "Teacher name is empty");
+                        goto NewTeacher;
+                    }
 
                     int newRoomNum;
-                    while (true) 
+                    while (true)
                     {
                         Helper.PrintConsole(ConsoleColor.Magenta, "New Room Number:");
                         string roomInput = Console.ReadLine();
 
                         if (int.TryParse(roomInput, out newRoomNum))
                         {
-                            break; 
+                            break;
                         }
                         else
                         {

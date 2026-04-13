@@ -8,8 +8,6 @@ namespace CourseApp
 {
     public class Program
     {
-        
-        StudentController _studentController = new StudentController();
         static void Main(string[] args)
         {
             Helper.PrintConsole(ConsoleColor.Magenta, "--- MAIN MENU ---");

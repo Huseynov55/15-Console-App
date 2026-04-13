@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F6E58ED2-E152-9F84-D785-DE08573D6E48}|CourseApp\\CourseApp.csproj|c:\\users\\anarh\\desktop\\15-console-app\\15-consoleapp\\courseapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6E58ED2-E152-9F84-D785-DE08573D6E48}|CourseApp\\CourseApp.csproj|solutionrelative:courseapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F6E58ED2-E152-9F84-D785-DE08573D6E48}|CourseApp\\CourseApp.csproj|c:\\users\\anarh\\desktop\\15-console-app\\15-consoleapp\\courseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6E58ED2-E152-9F84-D785-DE08573D6E48}|CourseApp\\CourseApp.csproj|solutionrelative:courseapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,20 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\CourseApp\\Program.cs",
               "RelativeDocumentMoniker": "CourseApp\\Program.cs",
               "ToolTip": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\CourseApp\\Program.cs",
               "RelativeToolTip": "CourseApp\\Program.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAUwGAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T21:32:19.547Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\CourseApp\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "CourseApp\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\anarh\\Desktop\\15-Console-App\\15-ConsoleApp\\CourseApp\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "CourseApp\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T12:16:19.057Z",
               "EditorCaption": ""
             },
             {
